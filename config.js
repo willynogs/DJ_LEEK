@@ -1,0 +1,4 @@
+module.exports = {
+  CONTENTFUL_SPACE: 'kwsts27l6oew',
+  CONTENTFUL_ACCESS_TOKEN: '203d4d398904111df0ba6d3725edb081891c47b0e0e67c7e5403b6c108ac5b2e'
+};

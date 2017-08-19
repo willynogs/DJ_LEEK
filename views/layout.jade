@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title DJ LEEK // Columbus, Ohio
+    base(href="/")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:300,400", rel="stylesheet")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+  body
+    .page-wrap(ng-app='leek')
+      .nav-overlay#nav-overlay(ng-controller="NavCtrl")
+        a(ng-click="goTo('index')") HOME
+        a(ng-click="goTo('about')") ABOUT
+        a(ng-click="goTo('events')") EVENTS
+        a(ng-click="goTo('images')") IMAGES
+      .inner-page-wrap
+        .top.clearfix
+          .logo
+            h1 DJ LEEK
+          .nav#nav
+            .nav-menu
+              .nav-menu-inner#nav-menu-inner
+                .menu-bar
+                .menu-bar
+                .menu-bar
+            .nav-links
+              a(href="/") HOME
+              a(href="/about") ABOUT
+              a(href="/events") EVENTS
+              a(href="/images") IMAGES
+        .page-content
+          ui-view
+  script(src='/scripts/moment/min/moment.min.js')
+  script(src='/scripts/angular/angular.min.js')
+  script(src='/scripts/angular-animate/angular-animate.min.js')
+  script(src='/scripts/angular-ui-router/release/angular-ui-router.min.js')
+  script(src='/javascripts/angular.mdl.js')
+  script(src='/javascripts/angular.formatDate.filter.js')
+  script(src='/javascripts/angular.getContent.svc.js')
+  script(src='/javascripts/angular.nav.ctrl.js')
+  script(src='/javascripts/angular.config.js')
+  script(src='/javascripts/angular.home.ctrl.js')
+  script(src='/javascripts/angular.about.ctrl.js')
+  script(src='/javascripts/angular.events.ctrl.js')
+  script(src='/javascripts/angular.img.ctrl.js')
+  script(src='/javascripts/app.js')
+  script(src='/javascripts/ga.tracking.js')
