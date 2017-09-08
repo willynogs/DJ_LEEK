@@ -8,16 +8,11 @@ html
     link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:300,400", rel="stylesheet")
     meta(name="viewport", content="width=device-width, initial-scale=1")
   body
-    .page-wrap(ng-app='leek')
-      .nav-overlay#nav-overlay(ng-controller="NavCtrl")
-        a(ng-click="goTo('index')") HOME
-        a(ng-click="goTo('about')") ABOUT
-        a(ng-click="goTo('events')") EVENTS
-        a(ng-click="goTo('images')") IMAGES
-      .inner-page-wrap
-        .top.clearfix
-          .logo
-            h1 DJ LEEK
+    .container(ng-app='leek')
+        .row
+          .col-md-12
+          
+        //.top
           .nav#nav
             .nav-menu
               .nav-menu-inner#nav-menu-inner
