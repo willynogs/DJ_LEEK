@@ -58,6 +58,7 @@ video {
   align-items: center;
   justify-content: center;
   .splash-wrap-inner {
+    max-height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,6 +66,7 @@ video {
     justify-content: center;
     background: rgba(0,0,0,0.8);
     padding: 30px;
+    overflow: scroll;
     h2 {
       font-size: 6em;
       margin: 0;
