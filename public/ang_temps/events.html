@@ -1,6 +1,13 @@
 <div class="inner-wrap" ng-init="init()">
-  <h2>EVENTS</h2>
-  <div class="event" ng-repeat="event in events track by $index">
+  <div class="splash-wrap">
+    <div class="splash-wrap-inner">
+      <h2>EVENTS</h2>
+      <span class="splash-content">
+
+      </span>
+    </div>
+  </div>
+  <!--<div class="event" ng-repeat="event in events track by $index">
     <h3>{{ event.title }}</h3>
     <span><i>{{ event.when | formatDate }}</i></span>
     <br>
@@ -9,5 +16,5 @@
     <a ng-href="https://www.google.com/maps/dir/Current+Location/{{ event.where.lat }},{{ event.where.lon }}" target="_blank">
       Directions
     </a>
-  </div>
+  </div>-->
 </div>
