@@ -54,13 +54,15 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  .splash-wrap-inner {
-    max-height: 70vh;
-    width: 100%;
+  .splash-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .splash-wrap-inner {
+    max-height: 70vh;
+    width: 100%;
     background: rgba(0,0,0,0.8);
     padding: 30px;
     transition: 0.5s;
@@ -76,7 +78,7 @@ video {
       margin: 0;
     }
     img {
-      max-height: 350px; 
+      max-height: 350px;
       max-width: 80%;
       height: auto;
       width: auto;
