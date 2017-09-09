@@ -5,7 +5,6 @@ app.controller('EventsCtrl', function($scope, $http, getContent){
     getContent.getType('event')
     .then((response) => {
       $scope.events = response.data;
-      console.log(response.data);
     });
   };
 });

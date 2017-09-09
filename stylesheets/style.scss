@@ -77,6 +77,9 @@ video {
     }
     img {
       max-height: 300px;
+      max-width: 300px;
+      height: auto;
+      width: auto;
     }
     .splash-title {
       font-size: 3em;
