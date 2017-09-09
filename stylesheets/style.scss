@@ -16,9 +16,6 @@ body {
 
 a {
   text-decoration: none !important;
-  &:hover {
-    color: pink;
-  }
 }
 
 a,
@@ -83,6 +80,15 @@ video {
     .splash-content {
       color: #fff;
     }
+  }
+}
+
+.event {
+  text-align: left;
+  padding: 5px;
+  a {
+    color: #fff;
+    text-decoration: underline;
   }
 }
 
