@@ -16,6 +16,9 @@ body {
 
 a {
   text-decoration: none !important;
+  &:hover {
+    color: pink;
+  }
 }
 
 a,
@@ -71,5 +74,47 @@ video {
       color: #fff;
       margin: 0;
     }
+    .splash-content {
+      color: #fff;
+    }
+  }
+}
+
+.nav {
+  margin: 20px 0;
+  padding-right: 0;
+  background: rgba(0,0,0,0.8);
+  li {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-soundcloud {
+  transition: 0.3s;
+}
+
+.fa-facebook {
+  &:hover {
+    color: #3b5998;
+  }
+}
+
+.fa-instagram {
+  &:hover {
+    color: #c32aa3;
+  }
+}
+
+.fa-twitter {
+  &:hover {
+    color: #00b6f1;
+  }
+}
+
+.fa-soundcloud {
+  &:hover {
+    color: #ff5500;
   }
 }
