@@ -4,9 +4,10 @@
       <h2 class="splash-title">IMAGES</h2>
       <span class="splash-content">
         <span class="row">
-          <span class="col-md-6 col-sm-12" ng-repeat="img in images track by $index">
+          <img class="img-fluid" ng-repeat="img in images track by $index" ng-src="{{ img.url }}" alt="{{ img.description }}">
+          <!--<span class="col-md-6 col-sm-12" ng-repeat="img in images track by $index">
             <img ng-src="{{ img.url }}" alt="{{ img.description }}">
-          </span>
+          </span>-->
         </span>
         <!--<div class="img-wrap col-md-3" ng-repeat="img in images track by $index">
           <img ng-src="{{ img.url }}" alt="{{ img.description }}">
